@@ -1,0 +1,9 @@
+﻿@model KütüphaneYönetimSistemi.ViewModels.AuthorViewModel
+
+<h1>Yazar Detayları</h1>
+
+<p><strong>Adı:</strong> @Model.FirstName</p>
+<p><strong>Soyadı:</strong> @Model.LastName</p>
+<p><strong>Doğum Tarihi:</strong> @Model.DateOfBirth.ToShortDateString()</p>
+
+<a asp-action="List">Geri</a>

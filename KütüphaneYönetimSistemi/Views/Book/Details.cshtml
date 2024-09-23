@@ -1,0 +1,12 @@
+﻿@model KütüphaneYönetimSistemi.ViewModels.BookViewModel
+
+<h1>Kitap Detayları</h1>
+
+<p><strong>Başlık:</strong> @Model.Title</p>
+<p><strong>Yazar:</strong> @Model.AuthorName</p>
+<p><strong>Tür:</strong> @Model.Genre</p>
+<p><strong>Yayın Tarihi:</strong> @Model.PublishDate.ToShortDateString()</p>
+<p><strong>ISBN:</strong> @Model.ISBN</p>
+<p><strong>Kopya Sayısı:</strong> @Model.CopiesAvailable</p>
+
+<a asp-action="List">Geri</a>
